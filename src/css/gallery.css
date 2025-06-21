@@ -1,0 +1,93 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.form {
+  padding-top: 50px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  display: flex;
+  gap: 10px;
+  padding-left: 30%;
+}
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  width: 272px;
+  height: 40px;
+  border-radius: 4px;
+  background: #fff;
+}
+button {
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 8px 16px;
+  width: 91px;
+  height: 45px;
+  background: #4e75ff;
+  font-size: 16px;
+
+  color: #fff;
+}
+button:hover {
+  background: #6c8cff;
+}
+.gallery-item {
+  border: 1px solid #808080;
+}
+.gallery-item img {
+  display: block;
+  min-height: 250px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.info {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  width: 360px;
+  height: 48px;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  font-weight: bold;
+}
+.value {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.loader {
+  font-size: 18px;
+  color: #333;
+  padding-left: 30%;
+  margin: 20px auto;
+}
+
+.hidden {
+  display: none;
+}
