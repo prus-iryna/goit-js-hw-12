@@ -87,6 +87,24 @@ button:hover {
   padding-left: 30%;
   margin: 20px auto;
 }
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.js-load-more {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 125px;
+  height: 40px;
+  background: #4e75ff;
+}
 
 .hidden {
   display: none;
