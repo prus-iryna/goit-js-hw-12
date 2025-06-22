@@ -39,6 +39,7 @@ async function handleSubmit(event) {
   try {
     const data = await getImagesByQuery(query, page);
     hideLoader();
+    hideLoadMoreButton();
     if (data.hits.length === 0) {
       iziToast.error({
         message:
