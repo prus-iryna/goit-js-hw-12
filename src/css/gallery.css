@@ -4,6 +4,8 @@
   gap: 24px;
   padding-top: 50px;
   padding-bottom: 50px;
+  justify-content: center;
+  align-items: center;
 }
 .img {
   display: block;
