@@ -14,7 +14,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 const form = document.querySelector('form');
 const input = form.querySelector('input[name="search-text"]');
-const LoadeMore = document.querySelector('.js-load-more');
+const loadMore = document.querySelector('.js-load-more');
 let page = 1;
 let query = '';
 const imgPer_Page = 15;
@@ -34,12 +34,12 @@ async function handleSubmit(event) {
   input.value = '';
   clearGallery();
   page = 1;
-  showLoadMoreButton();
+  hideLoadMoreButton();
   showLoader();
   try {
     const data = await getImagesByQuery(query, page);
     hideLoader();
-    hideLoadMoreButton();
+
     if (data.hits.length === 0) {
       iziToast.error({
         message:
@@ -60,7 +60,7 @@ async function handleSubmit(event) {
     hideLoader();
   }
 }
-LoadeMore.addEventListener('click', handleClick);
+loadMore.addEventListener('click', handleClick);
 async function handleClick() {
   page += 1;
 
